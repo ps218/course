@@ -1,0 +1,10 @@
+﻿snapshots:
+  - name: scd_raw_listings
+    relation: source('airbnb','listings')
+    config:
+      unique_key: id
+      updated_at: updated_at
+      strategy: timestamp
+      hard_deletes: invalidate
+# there ar 3 strategiees; timestamp by updated at, check by selected column value, all check by whateveer is set up by macro
+# what happen if old recore is removed from the source , by default ignore, invalidate so keep info that this entry reachd its end of use

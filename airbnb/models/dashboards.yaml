@@ -1,0 +1,16 @@
+﻿exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://fd95fc83.us2a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=r9BNAM9J8wn2ZvyWOjiECPjNntqKIMUA5TW1KIm5_yHd5xRQbqx8AhMcP1oV9lZy
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_with_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: P.S.
+      email: stawer2018@gmail.com
