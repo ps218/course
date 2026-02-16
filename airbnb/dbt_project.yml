@@ -52,3 +52,6 @@ data_tests:
   +schema: _test_failures
 flags:
   require_generic_test_arguments_property: true
+
+vars:
+  user_name: "Piotr"
