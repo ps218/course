@@ -161,3 +161,16 @@ Runtime Error
   
 [0m21:27:33.281067 [debug] [MainThread]: Command `dbt build` failed at 21:27:33.280975 after 0.13 seconds
 [0m21:27:33.281320 [debug] [MainThread]: Flushing usage events
+[0m23:20:23.793714 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:20:23.855426 | ec0a5d8b-6665-40ac-9ead-8765743871d0 ==============================
+[0m23:20:23.855426 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:20:23.856102 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\piotr\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:20:23.856657 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\piotr\Documents\Udemy\DBT\Git\course\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:20:23.857739 [debug] [MainThread]: Command `dbt deps` failed at 23:20:23.857649 after 0.12 seconds
+[0m23:20:23.857989 [debug] [MainThread]: Flushing usage events
